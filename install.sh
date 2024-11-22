@@ -23,11 +23,10 @@ source .venv/bin/activate
 echo -e "\033[0;32mInstalling python-cryptography\033[0m"
 apt download python-cryptography
 dpkg -x python-cryptography_* $PREFIX/tmp
-mkdir $PREFIX/tmp${PREFIX}/lib/python3.11/site-packages/* .venv/lib/python3.11/site-packages
-mv $PREFIX/tmp${PREFIX}/lib/python3.11/site-packages/* .venv/lib/python3.11/site-packages
+mv $PREFIX/tmp$PREFIX/lib/python3.11/site-packages/* .venv/lib/python3.11/site-packages
 
 echo -e "\033[0;32mInstalling dependencies\033[0m"
-pip install -r termux/requirements.txt
+pip3.11 install -r termux/requirements.txt
 
 SENPCLI_SH_PATH=$SENPWAI_DIR/termux/senpcli.sh
 SENPCLI_BIN_PATH=$PREFIX/bin/senpcli
