@@ -15,7 +15,7 @@ git clone https://github.com/SenZmaKi/Senpwai --depth 1 $SENPWAI_DIR
 cd $SENPWAI_DIR
 
 echo -e "\033[0;32mCreating virtual environment, this may take a while\033[0m"
-python3 -m venv .venv
+python3.11 -m venv .venv
 
 echo -e "\033[0;32mActivating virtual environment\033[0m"
 source .venv/bin/activate
