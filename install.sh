@@ -23,7 +23,7 @@ source .venv/bin/activate
 echo -e "\033[0;32mInstalling python-cryptography\033[0m"
 apt download python-cryptography
 dpkg -x python-cryptography_* $PREFIX/tmp
-md $PREFIX/tmp${PREFIX}/lib/python3.11/site-packages/* .venv/lib/python3.11/site-packages
+mkdir $PREFIX/tmp${PREFIX}/lib/python3.11/site-packages/* .venv/lib/python3.11/site-packages
 mv $PREFIX/tmp${PREFIX}/lib/python3.11/site-packages/* .venv/lib/python3.11/site-packages
 
 echo -e "\033[0;32mInstalling dependencies\033[0m"
